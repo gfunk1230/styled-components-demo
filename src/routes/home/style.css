@@ -1,5 +1,13 @@
 .home {
+	text-align: center;
 	padding: 56px 20px;
 	min-height: 100%;
 	width: 100%;
+}
+
+.buttonWrapper {
+	width: 600px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
