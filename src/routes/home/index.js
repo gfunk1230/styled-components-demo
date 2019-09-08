@@ -13,19 +13,27 @@ const Home = () => (
 			<strong>Props :</strong> text, radius, color, size
 		</p>
 		<section class={style.buttonWrapper}>
-			<PrimaryButton size="sm" color="red" radius={radiusOne} text="Primary" />
+			<PrimaryButton 
+				size="sm" 
+				color="red" 
+				radius={radiusOne} 
+			>
+				Primary
+			</PrimaryButton>
 			<PrimaryButton
 				size="md"
 				color="orange"
 				radius={radiusTwo}
-				text="Primary"
-			/>
+			>
+				Primary
+			</PrimaryButton>
 			<PrimaryButton
 				size="lg"
 				color="blue"
 				radius={radiusThree}
-				text="Primary"
-			/>
+			>
+				Primary
+			</PrimaryButton>
 		</section>
 	</main>
 );
