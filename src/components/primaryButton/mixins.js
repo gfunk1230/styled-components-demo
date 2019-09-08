@@ -2,21 +2,21 @@ import { css } from "styled-components";
 import { red, blue, orange, redLight, blueLight, orangeLight } from "../tokens";
 
 const SM = {
-  sizeOverRides: css`
+  resize: css`
     font-size: 13px;
     width: 115px;
   `
 };
 
 const MD = {
-  sizeOverRides: css`
+  resize: css`
     font-size: 15px;
     width: 143px;
   `
 };
 
 const LG = {
-  sizeOverRides: css`
+  resize: css`
     font-size: 17px;
     width: 153px;
   `
@@ -24,15 +24,15 @@ const LG = {
 
 export const buttonResize = size => {
   if (size === "sm") {
-    return SM.sizeOverRides;
+    return SM.resize;
   }
 
   if (size === "md") {
-    return MD.sizeOverRides;
+    return MD.resize;
   }
 
   if (size === "lg") {
-    return LG.sizeOverRides;
+    return LG.resize;
   }
 };
 
@@ -76,30 +76,29 @@ export const buttonHoverStates = ({ main, hover, focus, active, disabled }) => {
     }
     &.disabled,
     &[disabled] {
+      opacity: 0.5;
       background-color: ${disabled};
+      cursor: not-allowed;
     }
   `;
 };
 
-export const buttonHoverColor = color => {
+export const buttonColor = color => {
   if (color === "red") {
-    const styles = buttonHoverStates(RED);
     return css`
-      ${styles}
+      ${buttonHoverStates(RED)}
     `;
   }
 
   if (color === "orange") {
-    const styles = buttonHoverStates(ORANGE);
     return css`
-      ${styles}
+      ${buttonHoverStates(ORANGE)}
     `;
   }
 
   if (color === "blue") {
-    const styles = buttonHoverStates(BLUE);
     return css`
-      ${styles}
+      ${buttonHoverStates(BLUE)}
     `;
   }
 };
