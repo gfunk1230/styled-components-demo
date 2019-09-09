@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { buttonResize, buttonColor } from "./mixins";
-import { padding10, red } from "../tokens";
+import { padding10, gh_colorInteractive } from "../tokens";
 
 export const PrimaryButton = styled.button`
-  background-color: ${props => (props.color ? props.color : `${red}`)};
   cursor: pointer;
   display: inline-block;
   font-weight: bold;

@@ -1,5 +1,13 @@
 import { css } from "styled-components";
-import { red, blue, orange, redLight, blueLight, orangeLight } from "../tokens";
+import { 
+  sl_colorPrimary, 
+  gh_colorInteractive, 
+  colorWarning, 
+  sl_colorPrimaryDarker, 
+  gh_colorInteractiverDarker, 
+  colorWarningDarker,
+  colorPoi 
+} from "../tokens";
 
 const SM = {
   resize: css`
@@ -37,27 +45,27 @@ export const buttonResize = size => {
 };
 
 const BLUE = {
-  main: blue,
-  hover: blueLight,
-  focus: blueLight,
-  active: blueLight,
-  disabled: blueLight
+  main: gh_colorInteractive,
+  hover: gh_colorInteractiverDarker,
+  focus: gh_colorInteractiverDarker,
+  active: gh_colorInteractiverDarker,
+  disabled: colorPoi
 };
 
 const RED = {
-  main: red,
-  hover: redLight,
-  focus: redLight,
-  active: redLight,
-  disabled: redLight
+  main: sl_colorPrimary,
+  hover: sl_colorPrimaryDarker,
+  focus: sl_colorPrimaryDarker,
+  active: sl_colorPrimaryDarker,
+  disabled: colorPoi
 };
 
 const ORANGE = {
-  main: orange,
-  hover: orangeLight,
-  focus: orangeLight,
-  active: orangeLight,
-  disabled: orangeLight
+  main: colorWarning,
+  hover: colorWarningDarker,
+  focus: colorWarningDarker,
+  active: colorWarningDarker,
+  disabled: colorPoi
 };
 
 export const buttonHoverStates = ({ main, hover, focus, active, disabled }) => {
@@ -76,7 +84,7 @@ export const buttonHoverStates = ({ main, hover, focus, active, disabled }) => {
     }
     &.disabled,
     &[disabled] {
-      opacity: 0.5;
+      opacity: 0.7;
       background-color: ${disabled};
       cursor: not-allowed;
     }
