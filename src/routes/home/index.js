@@ -1,8 +1,7 @@
 import { h } from "preact";
 import style from "./style";
-import styled from "styled-components";
 
-import { PrimaryButton, PrimaryCustomizableButton } from "../../components/primaryButton/button";
+import { Button, PrimaryButton } from "../../components/primaryButton/button";
 import { radiusOne, radiusTwo, radiusThree } from "../../components/tokens";
 
 const Home = () => (
@@ -12,18 +11,18 @@ const Home = () => (
       <strong>Props :</strong> radius, disabled , size, color
     </p>
     <section class={style.buttonWrapper}>
-      <PrimaryCustomizableButton as={PrimaryButton} size="sm" color="red" radius={radiusOne}>
+      <PrimaryButton as={Button} size="sm" color="red" radius={radiusOne}>
         Primary
-      </PrimaryCustomizableButton>
-      <PrimaryCustomizableButton as={PrimaryButton} size="md" color="orange" radius={radiusTwo}>
+      </PrimaryButton>
+      <PrimaryButton as={Button} size="md" color="orange" radius={radiusTwo}>
         Primary
-      </PrimaryCustomizableButton>
-      <PrimaryCustomizableButton as={PrimaryButton} size="lg" color="blue" radius={radiusThree}>
+      </PrimaryButton>
+      <PrimaryButton as={Button} size="lg" color="blue" radius={radiusThree}>
         Primary
-      </PrimaryCustomizableButton>
-      <PrimaryCustomizableButton as={PrimaryButton} size="lg" color="blue" radius={radiusThree} disabled>
+      </PrimaryButton>
+      <PrimaryButton as={Button} size="lg" color="blue" radius={radiusThree} disabled>
         Disabled
-      </PrimaryCustomizableButton>
+      </PrimaryButton>
     </section>
   </main>
 );

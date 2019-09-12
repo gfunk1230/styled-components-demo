@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { buttonResize, buttonColor } from "./mixins";
 import { padding10 } from "../tokens";
 
-export const PrimaryButton = styled.button`
+export const Button = styled.button`
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
@@ -19,7 +19,7 @@ export const PrimaryButton = styled.button`
 `;
 
 
-export const PrimaryCustomizableButton = styled.button`
+export const PrimaryButton = styled.button`
   border-radius: ${props => (props.radius ? props.radius : "5px")};
   ${props => props.size && buttonResize(props.size)};
   ${props => props.color && buttonColor(props.color)};
