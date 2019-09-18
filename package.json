@@ -11,7 +11,8 @@
     "serve": "preact build && preact serve",
     "dev": "preact watch",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "lint:css": "stylelint './src/**/*.js'"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
@@ -26,7 +27,12 @@
     "jest-preset-preact": "^1.0.0",
     "per-env": "^1.0.2",
     "preact-cli": "^3.0.0-rc.5",
-    "preact-render-spy": "^1.2.1"
+    "preact-render-spy": "^1.2.1",
+    "preact-render-to-string": "^4.1.0",
+    "stylelint": "^11.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0"
   },
   "dependencies": {
     "preact": "10.0.0-rc.0",
