@@ -13,6 +13,7 @@
 	justify-items: center;
 }
 
+/* Responsive images */
 img {
   max-width: 100%;
   height: auto;

@@ -38,27 +38,27 @@ const Home = () => (
     <section>
       <h2>Grid System Samples</h2>
       <GridParent gridTemplateColumns={12} bgColor="red">
-        <GridChild defaultColumnSpanCount={2} bgColor="green">
+        <GridChild desktopColumnSpanCount={2} bgColor="green">
           <img src="https://placeimg.com/550/550/any"/>
           <p>2 column div on desktop</p>
         </GridChild>
-        <GridChild defaultColumnSpanCount={2} bgColor="green">
+        <GridChild desktopColumnSpanCount={2} bgColor="green">
           <img src="https://placeimg.com/550/550/any"/>
           <p>2 column div on desktop</p>
         </GridChild>
-        <GridChild defaultColumnSpanCount={2} bgColor="green">
+        <GridChild desktopColumnSpanCount={2} bgColor="green">
           <img src="https://placeimg.com/550/550/any"/>
           <p>2 column div on desktop</p>
         </GridChild>
-        <GridChild defaultColumnSpanCount={2} bgColor="green">
+        <GridChild desktopColumnSpanCount={2} bgColor="green">
           <img src="https://placeimg.com/550/550/any"/>
           <p>2 column div on desktop</p>
         </GridChild>
-        <GridChild defaultColumnSpanCount={2} bgColor="green">
+        <GridChild desktopColumnSpanCount={2} bgColor="green">
           <img src="https://placeimg.com/550/550/any"/>
           <p>2 column div on desktop</p>
         </GridChild>
-        <GridChild defaultColumnSpanCount={2} bgColor="green">
+        <GridChild desktopColumnSpanCount={2} bgColor="green">
           <img src="https://placeimg.com/550/550/any"/>
           <p>2 column div on desktop</p>
         </GridChild>
