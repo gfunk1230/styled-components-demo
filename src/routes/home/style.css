@@ -13,8 +13,12 @@
 	justify-items: center;
 }
 
+section {
+	margin-bottom: 75px;
+}
+
 /* Responsive images */
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
